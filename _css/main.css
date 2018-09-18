@@ -34,6 +34,21 @@ body {
 	background-size: cover;
 }
 
+/* SEAL */
+
+.seal {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	border-top: 5px solid #666;
+}
+
+.seal img {
+	margin: -5px 50px;
+	width: 90px;
+	box-shadow: 0px 0px 3px rgba( 0, 0, 0, .5);
+}
+
 /* CONTENT */
 
 .content {
@@ -90,10 +105,43 @@ body {
 
 /* CONTENT: left section */
 
+.intro {
+	padding: 50px;
+}
+
+.intro img {
+	width: 90px;
+	height: 90px;
+	padding: 10px;
+}
+
+.intro div {
+	display: flex;
+}
+
+.intro div div {
+	flex-direction: column;
+	justify-content: center;
+}
+
+.intro > p {
+	text-indent: 10px;
+	font-size: 200%;
+	color: #333;
+}
+
 
 /* RESPONSIVE SETTINGS */
 
 @media only screen and (max-width: 965px) {
+
+	/*
+	.seal img {
+		margin: -5px 30px;
+		width: 50px;
+	}
+	*/
+
 	.item {
 		width: 100%;
 	}
