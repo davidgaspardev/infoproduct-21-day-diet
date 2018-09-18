@@ -1,5 +1,5 @@
 
-/* ===> Adding fonts */
+/* ============== ADDING FONTS ============== */
 @font-face {
 	font-family: 'SourceSans';
 	src: url('../_font/source-sans.regular.ttf') format('truetype');
@@ -11,8 +11,9 @@
 	src: url('../_font/source-sans.bold.ttf') format('truetype');
 }
 
-/* ===> Global style*/
+/* ============== STYLE ==============*/
 
+/* GLOBAL */
 * {
 	margin: 0;
 	padding: 0;
@@ -24,7 +25,7 @@ body {
 	font-family: 'SourceSans', sans-serif;
 }
 
-/* ===> wallpaper */
+/* WALLPAPER */
 
 .wallpaper {
 	width: 100%;
@@ -33,7 +34,7 @@ body {
 	background-size: cover;
 }
 
-/* ===> Content */
+/* CONTENT */
 
 .content {
 	position: absolute;
@@ -42,33 +43,62 @@ body {
 }
 
 .container {
-	padding: 20px;
 	display: flex;
 	flex-wrap: wrap-reverse;
+	justify-content: center;
 }
 
 .item {
 	width: 50%;
-	min-width: 500px;
 	height: 100vh;
+
+	/* center child elements */
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-/* ===> CONTENT: right section */
+/* CONTENT: right section */
 
 .logo {
-	max-width: 500px;
-	width: 100%;
-	max-height: 500px;
-	height: 100%;
-	border-radius: 50%;
-	background-color: #ff5C5C;
 
+	padding: 100px;
+	background-image: url('../_img/logo.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	/* center child elements */
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
 }
 
+.logo h1, .logo h2 {
+	font-weight: normal;
+	color: white;
+}
+
+.logo h1 {
+	font-size: 500%;
+}
+
+.logo h2 {
+	font-size: 200%;
+}
+
+/* CONTENT: left section */
+
+
+/* RESPONSIVE SETTINGS */
+
+@media only screen and (max-width: 965px) {
+	.item {
+		width: 100%;
+	}
+
+	.logo {
+		padding: 60px;
+	}
+}
