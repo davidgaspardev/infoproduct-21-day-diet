@@ -1,19 +1,7 @@
-
-/* ============== ADDING FONTS ============== */
-@font-face {
-	font-family: 'SourceSans';
-	src: url('../_font/source-sans.regular.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'SourceSans';
-	font-weight: bold;
-	src: url('../_font/source-sans.bold.ttf') format('truetype');
-}
-
 /* ============== STYLE ==============*/
 
-/* GLOBAL */
+/* ====== GLOBAL ====== */
+
 * {
 	margin: 0;
 	padding: 0;
@@ -22,5 +10,142 @@
 
 body {
 	background-color: white;
-	font-family: 'SourceSans', sans-serif;
+	font-family: 'Oxygen', 'OpenSans', sans-serif;
+}
+
+/* ====== WALLPAPER ====== */
+
+.wallpaper {
+	width: 100%;
+	height: 100vh;
+	object-fit: cover;
+}
+
+/* ====== SEAL ====== */
+
+.seal {
+	position: absolute;
+	top: 0;
+	left: 60px;
+	width: 100px;
+	cursor: pointer;
+	z-index: 1;
+}
+
+/* ====== CONTENT ====== */
+
+.content {
+	position: absolute;
+	top: 0;
+	right: 15px;
+	left: 15px;
+	width: calc(100% - 30px);
+}
+
+.content main {
+	width: 100%;
+}
+
+/* === INTRO === */
+
+#intro {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap-reverse;
+}
+
+#intro section {
+	width: 50%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+}
+
+#intro article {
+	padding: 5%;
+}
+
+#intro header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.hotmart {
+	padding: 10px;
+	width: 20px;
+}
+
+#intro h1 {
+	color: #333;
+}
+
+#intro p {
+	color: white;
+	font-size: 150%;
+	text-indent: 10px;
+}
+
+#intro strong {
+	color: #FF5C5C;
+}
+
+#hotlink {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	border: 3px solid white;
+	border-radius: 40px;
+	color: white;
+	margin: 50px 0px;
+	font-weight: bold;
+	font-size: 150%;
+}
+
+#hotlink:hover {
+	background-color: rgba(255, 92, 92, .8);
+}
+
+.security {
+	max-width: 600px;
+	width: 100%;
+	background-color: rgba(255,255,255,.8);
+	border-radius: 10px;
+	margin: 20px auto;
+	display: block;
+}
+
+/* LOGO */
+
+.logo {
+	padding: 20%;
+	object-fit: contain;
+}
+
+
+/* ============== RESPONSIVE ============== */
+
+@media only screen and (max-width: 1050px) {
+
+	#intro section {
+		width: 100%;
+	}
+
+	#intro p {
+		color: #333;
+	}
+
+	#hotlink {
+		background-color: #FF5c5c;
+	}
+
+	.security {
+		margin: -45px auto;
+	}
+
 }

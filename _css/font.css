@@ -1,0 +1,46 @@
+
+/* ============== ADDING FONTS ============== */
+
+@font-face {
+	font-family: 'OpenSans';
+	src: url('../_font/open-sans.regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'OpenSans';
+	font-weight: bold;
+	src: url('../_font/open-sans.bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Oswald';
+	src: url('../_font/oswald.regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Oswald';
+	font-weight: bold;
+	src: url('../_font/oswald.bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Oxygen';
+	src: url('../_font/oxygen.regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Oxygen';
+	font-weight: bold;
+	src: url('../_font/oxygen.bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'SourceSans';
+	src: url('../_font/source-sans.regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'SourceSans';
+	font-weight: bold;
+	src: url('../_font/source-sans.bold.ttf') format('truetype');
+}
