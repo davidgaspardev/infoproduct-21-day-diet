@@ -23,11 +23,21 @@ function insertTexts() {
 	// Objects array of elements with class name "text"
 	let pText = document.getElementsByClassName('text');
 
-	
+
 	for(var i = 0; i < pText.length; i++) {
 		pText[i].innerHTML = text[i];
 	}
 
 }
 
+function videoEvent() {
+  let video = document.getElementsByClassName('video')[0];
+
+	video.addEventListener('click',function (event) {
+		event.target.replaceWith(document.createRange().createContextualFragment('<iframe class="video" src="https://www.youtube.com/embed/aoolloo16Tw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>'));
+	});
+
+}
+
 insertTexts();
+videoEvent();
