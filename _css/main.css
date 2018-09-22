@@ -105,6 +105,8 @@ body {
 	margin: 50px 0px;
 	font-weight: bold;
 	font-size: 150%;
+	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
 }
 
 #hotlink:hover {
