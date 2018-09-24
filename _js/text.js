@@ -15,8 +15,8 @@ function insertTexts() {
 	text.push('O que é a Dieta de 21 dias');
 
 	// <p>
-	text.push('A Dieta de 21 dias é um revolucionário protocolo de emagrecimento (100% Natural) que foi ' +
-		'baseado em mais de 1.200 experimentos científicos para ajudar você a perder peso e gordura Corporal. </br>' +
+	text.push('A <strong>Dieta de 21 dias</strong> é um revolucionário protocolo de emagrecimento (100% Natural) que foi ' +
+		'baseado em mais de <strong>1.200 experimentos científicos</strong> para ajudar você a perder peso e gordura Corporal. </br>' +
 		' Mais rápido do que qualquer outro método que você já tentou.' +
 		' Sem passar fome, sem contar calorias, sem abrir mão de alimentos deliciosos e sem ter que fazer exercícios monótonos e chatos.');
 
@@ -34,7 +34,7 @@ function videoEvent() {
   let video = document.getElementsByClassName('video')[0];
 
 	video.addEventListener('click',function (event) {
-		event.target.replaceWith(document.createRange().createContextualFragment('<iframe class="video" src="https://www.youtube.com/embed/aoolloo16Tw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>'));
+		event.target.replaceWith(document.createRange().createContextualFragment('<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/aoolloo16Tw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>'));
 	});
 
 }
